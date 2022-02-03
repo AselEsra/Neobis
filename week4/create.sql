@@ -23,7 +23,7 @@ CREATE TABLE Customers (
     id int NOT NULL,
     firstName varchar(50) NOT NULL,
     lastName varchar(50) NOT NULL,
-	phoneNumber int NOT NULL,
+    phoneNumber int NOT NULL,
     address varchar(255) NOT NULL,
     PRIMARY KEY (id)
 );
@@ -36,6 +36,8 @@ CREATE TABLE Orders (
      date_ datetime NOT NULL,
 	 PRIMARY KEY (id)
 );
+
+
 ALTER TABLE Orders
 ADD CONSTRAINT FK_CustomerOrder
 FOREIGN KEY (customerId) REFERENCES Customers(id);
