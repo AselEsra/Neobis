@@ -1,1 +1,37 @@
-test
+I have tested my methods by calling them in the main class. I have created 5 methods which are, 
+makeConnection() -for connecting with database, 
+add() -for adding customers to the database, 
+update() -for updating customers in the database, 
+delete() -for deleting customers from the database, 
+getData() -for getting all the customers from the database
+
+input:
+      makeConnection();
+      add(1,"Asel Esra", "Ozyilmaz", 706197714, "Isakaev/Bishkek");
+      add(2,"Osman Yasir", "Ozyilmaz", 706197714, "Kokjar/Bishkek");
+      add(3,"Gunduzalp", "Dogrutekin", 706417519, "Djal/Bishkek");
+      update(2,"Osman Yasir", "Ozyilmaz", 551115571, "Kokjar/Bishkek");
+      delete(3);
+      getData();
+
+
+If each method is executed without problem then the output is going to tell us what have we done.
+output:
+      ---------- Making connection with the DB ----------
+      Connection Successful!
+
+      ---------- Adding customers to DB ----------
+      Successfully added customer: Asel Esra Ozyilmaz
+      Successfully added customer: Osman Yasir Ozyilmaz
+      Successfully added customer: Gunduzalp Dogrutekin
+
+      ---------- Updating a customer from DB ----------
+      Successfully updated customer data with id: 2
+      New data = 2, Osman Yasir, Ozyilmaz, 551115571, Kokjar/Bishkek
+
+      ---------- Deleting a customer from DB ----------
+      Successfully deleted customer where id = 3
+
+      --------- Getting all Data from DB ----------
+      1, Asel Esra, Ozyilmaz, 706197714, Isakaev/Bishkek
+      2, Osman Yasir, Ozyilmaz, 551115571, Kokjar/Bishkek
